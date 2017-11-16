@@ -8,8 +8,8 @@
         <authors>Devart</authors>
         <summary>dbForge Studio for SQL Server (Express)</summary>
         <projectUrl>https://www.devart.com/dbforge/sql/studio</projectUrl>
-        <iconUrl>D:\ChocoPackageCreater\Choco\AddFiles\App128.png</iconUrl>
-        <licenseUrl>D:\ChocoPackageCreater\Choco\AddFiles\License.txt</licenseUrl>
+        <iconUrl>https://github.com/svoyak/chocopackages/blob/master/AddFiles/app128.png</iconUrl>
+        <licenseUrl>https://github.com/svoyak/chocopackages/blob/master/AddFiles/LicenseStudio.rtf</licenseUrl>
         <releaseNotes>https://www.devart.com/dbforge/sql/studio/revision_history.html</releaseNotes>
         <tags>DataBase Management Studio SQL Tools</tags>
         <packageSourceUrl>https://github.com/svoyak/chocopackages</packageSourceUrl>

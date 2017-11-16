@@ -3,7 +3,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'dbforgesqlstudioexp*'  
   fileType      = 'exe' 
-  silentArgs    = "/verysilent"
+  silentArgs    = "/qn /norestart"
   validExitCodes= @(0, 3010, 1605, 1614, 1641) 
 }
 $uninstalled = $false
@@ -11,7 +11,7 @@ $uninstalled = $false
 if ($key.Count -eq 1) {
   $key | % { 
     $packageArgs['file'] = "$($_.UninstallString)"
-    if ($packageArgs['fileType'] -eq 'exe') {
+    if ($packageArgs['fileType'] -eq 'MSI') {
       $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
       $packageArgs['file'] = ''
     }
