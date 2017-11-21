@@ -9,11 +9,9 @@ $packageArgs = @{
   url           = $url
   url64bit      = $url64
   softwareName  = 'dbforgesqlstudioexp*' 
-  checksum      = ''
+  checksum      = 'E5D54CDF0300C7DF1E6220F8E10F77A407B0E0D366068F736C30CDFBC78364A6'
   checksumType  = 'sha256' 
-  checksum64    = ''
-  checksumType64= 'sha256' 
-  silentArgs    = "/VERYSILENT" 
+  silentArgs    = "/VERYSILENT"
   validExitCodes= @(0, 3010, 1641)
 }
 Install-ChocolateyPackage @packageArgs 

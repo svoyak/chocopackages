@@ -2,17 +2,17 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <metadata>
         <id>dbforgesqlstudioexp</id>
-        <version>5.5.311</version>
+        <version>5.5.311.1</version>
         <title>DbForgeSqlServerStudioExpress</title>
         <description>dbForge Studio for SQL Server is a powerful IDE for SQL Server management, administration, development, data reporting and analysis. </description>
         <authors>Devart</authors>
         <summary>dbForge Studio for SQL Server (Express)</summary>
         <projectUrl>https://www.devart.com/dbforge/sql/studio</projectUrl>
-        <iconUrl>https://github.com/svoyak/chocopackages/blob/master/AddFiles/app128.png</iconUrl>
-        <licenseUrl>https://github.com/svoyak/chocopackages/blob/master/AddFiles/LicenseStudio.rtf</licenseUrl>
+        <iconUrl>https://github.com/svoyak/chocopackages/blob/master/AddFiles/dbforgesqlstudioexp/app128.png</iconUrl>
+        <licenseUrl>https://www.devart.com/dbforge/eula.html</licenseUrl>
         <releaseNotes>https://www.devart.com/dbforge/sql/studio/revision_history.html</releaseNotes>
         <tags>DataBase Management Studio SQL Tools</tags>
-        <packageSourceUrl>https://github.com/svoyak/chocopackages</packageSourceUrl>
+        <packageSourceUrl>https://github.com/svoyak/chocopackages/tree/master/dbforgesqlstudioexp</packageSourceUrl>
         <docsUrl>https://www.devart.com/dbforge/sql/studio/dbForgeStudioSQLServer.chm</docsUrl>
         <dependencies />
     </metadata>

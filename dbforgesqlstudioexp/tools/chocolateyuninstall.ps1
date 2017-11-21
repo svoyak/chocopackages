@@ -1,20 +1,24 @@
-$ErrorActionPreference = 'Stop'; 
+$ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'dbforgesqlstudioexp*'  
-  fileType      = 'exe' 
-  silentArgs    = "/qn /norestart"
-  validExitCodes= @(0, 3010, 1605, 1614, 1641) 
+  softwareName  = 'dbforgesqlstudioexp*'
+  fileType      = 'exe'
+
+  silentArgs    = "/VERYSILENT"
+  validExitCodes= @(0, 3010, 1605, 1614, 1641)
 }
+
 $uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
+
 if ($key.Count -eq 1) {
   $key | % { 
     $packageArgs['file'] = "$($_.UninstallString)"
     if ($packageArgs['fileType'] -eq 'MSI') {
-      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
+      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"     
       $packageArgs['file'] = ''
     }
+
     Uninstall-ChocolateyPackage @packageArgs
   }
 } elseif ($key.Count -eq 0) {
